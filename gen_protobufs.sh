@@ -1,0 +1,1 @@
+grpc_tools_node_protoc -I "$(pwd)" --js_out=import_style=commonjs:"$(pwd)/protobufs" --grpc-web_out=import_style=commonjs+dts,mode=grpcwebtext:"$(pwd)/protobufs"  $(find $(pwd) -name '*.proto')
